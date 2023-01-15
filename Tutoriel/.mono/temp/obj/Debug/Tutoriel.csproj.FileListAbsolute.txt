@@ -1,0 +1,8 @@
+/home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Tutoriel/.mono/temp/bin/Debug/Tutoriel.dll
+/home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Tutoriel/.mono/temp/bin/Debug/Tutoriel.pdb
+/home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Tutoriel/.mono/temp/obj/Debug/Tutoriel.csproj.AssemblyReference.cache
+/home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Tutoriel/.mono/temp/obj/Debug/Tutoriel.AssemblyInfoInputs.cache
+/home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Tutoriel/.mono/temp/obj/Debug/Tutoriel.AssemblyInfo.cs
+/home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Tutoriel/.mono/temp/obj/Debug/Tutoriel.csproj.CoreCompileInputs.cache
+/home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Tutoriel/.mono/temp/obj/Debug/Tutoriel.dll
+/home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Tutoriel/.mono/temp/obj/Debug/Tutoriel.pdb

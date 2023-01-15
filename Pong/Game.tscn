@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://Player.cs" type="Script" id=2]
+[ext_resource path="res://Ball.cs" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 64, 16 )
+
+[node name="Node2D" type="Node2D"]
+self_modulate = Color( 0, 0, 0, 1 )
+script = ExtResource( 2 )
+Speed = 600
+
+[node name="P1" type="Sprite" parent="."]
+position = Vector2( 1820, 540 )
+scale = Vector2( 0.5, 4 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Area2D" type="Area2D" parent="P1"]
+scale = Vector2( 0.5, 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="P1/Area2D"]
+shape = SubResource( 1 )
+
+[node name="P2" type="Sprite" parent="."]
+position = Vector2( 100, 540 )
+scale = Vector2( 0.5, 4 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Area2D" type="Area2D" parent="P2"]
+scale = Vector2( 0.5, 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="P2/Area2D"]
+shape = SubResource( 1 )
+
+[node name="Ball" type="Sprite" parent="."]
+position = Vector2( 960, 520 )
+texture = ExtResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="Ball"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ball/Area2D"]
+scale = Vector2( 0.5, 2 )
+shape = SubResource( 1 )
+
+[node name="StartTimer" type="Timer" parent="."]
+
+[node name="Background" type="Sprite" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+show_behind_parent = true
+light_mask = 0
+position = Vector2( 968, 549 )
+scale = Vector2( 32, 19 )
+texture = ExtResource( 1 )
+
+[connection signal="area_entered" from="Ball/Area2D" to="Ball" method="hit"]
