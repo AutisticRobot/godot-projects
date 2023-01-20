@@ -6,3 +6,11 @@
 /home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Pong/.mono/temp/bin/Debug/Pong.pdb
 /home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Pong/.mono/temp/obj/Debug/Pong.dll
 /home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Pong/.mono/temp/obj/Debug/Pong.pdb
+/home/awtisticrobot/Documents/GitHub/godot-projects/Pong/.mono/temp/bin/Debug/Pong.dll
+/home/awtisticrobot/Documents/GitHub/godot-projects/Pong/.mono/temp/bin/Debug/Pong.pdb
+/home/awtisticrobot/Documents/GitHub/godot-projects/Pong/.mono/temp/obj/Debug/Pong.csproj.AssemblyReference.cache
+/home/awtisticrobot/Documents/GitHub/godot-projects/Pong/.mono/temp/obj/Debug/Pong.AssemblyInfoInputs.cache
+/home/awtisticrobot/Documents/GitHub/godot-projects/Pong/.mono/temp/obj/Debug/Pong.AssemblyInfo.cs
+/home/awtisticrobot/Documents/GitHub/godot-projects/Pong/.mono/temp/obj/Debug/Pong.csproj.CoreCompileInputs.cache
+/home/awtisticrobot/Documents/GitHub/godot-projects/Pong/.mono/temp/obj/Debug/Pong.dll
+/home/awtisticrobot/Documents/GitHub/godot-projects/Pong/.mono/temp/obj/Debug/Pong.pdb

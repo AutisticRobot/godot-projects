@@ -8,19 +8,19 @@
     ".NETFramework,Version=v4.7.2": []
   },
   "packageFolders": {
-    "/home/minecraftserver/.nuget/packages/": {}
+    "/home/awtisticrobot/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Pong/Pong.csproj",
+      "projectUniqueName": "/home/awtisticrobot/Documents/GitHub/godot-projects/Pong/Pong.csproj",
       "projectName": "Pong",
-      "projectPath": "/home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Pong/Pong.csproj",
-      "packagesPath": "/home/minecraftserver/.nuget/packages/",
-      "outputPath": "/home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Pong/.mono/temp/obj/",
+      "projectPath": "/home/awtisticrobot/Documents/GitHub/godot-projects/Pong/Pong.csproj",
+      "packagesPath": "/home/awtisticrobot/.nuget/packages/",
+      "outputPath": "/home/awtisticrobot/Documents/GitHub/godot-projects/Pong/.mono/temp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/minecraftserver/.config/NuGet/NuGet.Config"
+        "/home/awtisticrobot/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net472"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/d916XYCS28e1duWNLzSMlmWKS3U9zKQN5Z84+8EtBv7ueMgMBvdNf6p1tM+VUCeLP3W4U+7CuLyK5sffJsGQQ==",
+  "dgSpecHash": "dYFDI/cWFk7/HQr2tJKapiLxbYXWZTt9sdG3XdO3JRh+OR+ubIkXXyhJow350DZbrhIBUNwlRn0ZKwn+Ku3kyw==",
   "success": true,
-  "projectFilePath": "/home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Pong/Pong.csproj",
+  "projectFilePath": "/home/awtisticrobot/Documents/GitHub/godot-projects/Pong/Pong.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
