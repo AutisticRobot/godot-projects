@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Pong/Pong.csproj": {}
+    "/home/minecraftserver/Documents/GitHub/godot projects/Pong/Pong.csproj": {}
   },
   "projects": {
-    "/home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Pong/Pong.csproj": {
+    "/home/minecraftserver/Documents/GitHub/godot projects/Pong/Pong.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Pong/Pong.csproj",
+        "projectUniqueName": "/home/minecraftserver/Documents/GitHub/godot projects/Pong/Pong.csproj",
         "projectName": "Pong",
-        "projectPath": "/home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Pong/Pong.csproj",
+        "projectPath": "/home/minecraftserver/Documents/GitHub/godot projects/Pong/Pong.csproj",
         "packagesPath": "/home/minecraftserver/.nuget/packages/",
-        "outputPath": "/home/minecraftserver/Godot_v3.5.1-stable_mono_x11_64/godot projects/Pong/.mono/temp/obj/",
+        "outputPath": "/home/minecraftserver/Documents/GitHub/godot projects/Pong/.mono/temp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/minecraftserver/.config/NuGet/NuGet.Config"
