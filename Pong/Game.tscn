@@ -10,7 +10,7 @@ extents = Vector2( 64, 16 )
 [node name="Node2D" type="Node2D"]
 self_modulate = Color( 0, 0, 0, 1 )
 script = ExtResource( 2 )
-Speed = 600
+Speed = 1200
 
 [node name="P1" type="Sprite" parent="."]
 position = Vector2( 1820, 540 )
@@ -44,6 +44,7 @@ shape = SubResource( 1 )
 position = Vector2( 960, 520 )
 texture = ExtResource( 1 )
 script = ExtResource( 3 )
+speed = 200
 
 [node name="Area2D" type="Area2D" parent="Ball"]
 
