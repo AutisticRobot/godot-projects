@@ -41,10 +41,11 @@ scale = Vector2( 0.5, 2 )
 shape = SubResource( 1 )
 
 [node name="Ball" type="Sprite" parent="."]
-position = Vector2( 960, 520 )
+position = Vector2( 964, 512 )
 texture = ExtResource( 1 )
 script = ExtResource( 3 )
-speed = 200
+speed = 500
+acc = 100
 
 [node name="Area2D" type="Area2D" parent="Ball"]
 
@@ -53,6 +54,7 @@ scale = Vector2( 0.5, 2 )
 shape = SubResource( 1 )
 
 [node name="StartTimer" type="Timer" parent="."]
+one_shot = true
 
 [node name="Background" type="Sprite" parent="."]
 modulate = Color( 0, 0, 0, 1 )
@@ -62,4 +64,32 @@ position = Vector2( 968, 549 )
 scale = Vector2( 32, 19 )
 texture = ExtResource( 1 )
 
+[node name="Button" type="Button" parent="."]
+margin_left = 790.0
+margin_top = 408.0
+margin_right = 850.0
+margin_bottom = 438.0
+rect_scale = Vector2( 5.6, 6.84 )
+text = "Start"
+
+[node name="P1score" type="Label" parent="."]
+margin_left = 1160.0
+margin_top = 25.0
+margin_right = 1240.0
+margin_bottom = 39.0
+rect_scale = Vector2( 7, 7 )
+text = "&e0"
+align = 1
+
+[node name="P2score" type="Label" parent="."]
+margin_left = 200.0
+margin_top = 25.0
+margin_right = 280.0
+margin_bottom = 39.0
+rect_scale = Vector2( 7, 7 )
+text = "&e0"
+align = 1
+
 [connection signal="area_entered" from="Ball/Area2D" to="Ball" method="hit"]
+[connection signal="timeout" from="StartTimer" to="Ball" method="_on_StartTimer_timeout"]
+[connection signal="button_down" from="Button" to="Ball" method="_on_Start_button_down"]
