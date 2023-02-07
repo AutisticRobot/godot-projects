@@ -44,8 +44,6 @@ shape = SubResource( 1 )
 position = Vector2( 964, 512 )
 texture = ExtResource( 1 )
 script = ExtResource( 3 )
-speed = 500
-acc = 100
 
 [node name="Area2D" type="Area2D" parent="Ball"]
 
@@ -78,7 +76,7 @@ margin_top = 25.0
 margin_right = 1240.0
 margin_bottom = 39.0
 rect_scale = Vector2( 7, 7 )
-text = "&e0"
+text = " &e0 "
 align = 1
 
 [node name="P2score" type="Label" parent="."]
@@ -87,7 +85,7 @@ margin_top = 25.0
 margin_right = 280.0
 margin_bottom = 39.0
 rect_scale = Vector2( 7, 7 )
-text = "&e0"
+text = " &e0 "
 align = 1
 
 [connection signal="area_entered" from="Ball/Area2D" to="Ball" method="hit"]
