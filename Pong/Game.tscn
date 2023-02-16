@@ -44,6 +44,8 @@ shape = SubResource( 1 )
 position = Vector2( 964, 512 )
 texture = ExtResource( 1 )
 script = ExtResource( 3 )
+speed = 300
+acc = 100
 
 [node name="Area2D" type="Area2D" parent="Ball"]
 
