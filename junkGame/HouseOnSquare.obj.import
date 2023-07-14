@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cnkv60870klfs"
+path="res://.godot/imported/HouseOnSquare.obj-76a091f9e6aa110f50da1d18a5d82406.mesh"
+
+[deps]
+
+files=["res://.godot/imported/HouseOnSquare.obj-76a091f9e6aa110f50da1d18a5d82406.mesh"]
+
+source_file="res://HouseOnSquare.obj"
+dest_files=["res://.godot/imported/HouseOnSquare.obj-76a091f9e6aa110f50da1d18a5d82406.mesh", "res://.godot/imported/HouseOnSquare.obj-76a091f9e6aa110f50da1d18a5d82406.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

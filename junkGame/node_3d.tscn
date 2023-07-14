@@ -1,5 +1,11 @@
-[gd_scene format=3 uid="uid://b1p62c275q22b"]
+[gd_scene load_steps=2 format=3 uid="uid://b1p62c275q22b"]
+
+[ext_resource type="ArrayMesh" uid="uid://cnkv60870klfs" path="res://HouseOnSquare.obj" id="1_6xvsx"]
 
 [node name="Node3D" type="Node3D"]
 
-[node name="Area3D" type="Area3D" parent="."]
+[node name="HouseOnSquare" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.805614, 0, 0.436626)
+mesh = ExtResource("1_6xvsx")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="HouseOnSquare"]
