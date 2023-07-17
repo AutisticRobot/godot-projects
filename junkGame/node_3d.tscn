@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://b1p62c275q22b"]
+[gd_scene load_steps=6 format=3 uid="uid://b1p62c275q22b"]
 
 [ext_resource type="ArrayMesh" uid="uid://cnkv60870klfs" path="res://HouseOnSquare.obj" id="1_6xvsx"]
 [ext_resource type="Material" uid="uid://o3uw0sjw4ak0" path="res://defaultTleMatreal.tres" id="1_07b61"]
+[ext_resource type="Script" path="res://Player.gd" id="1_wpcxg"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7vjoh"]
 
@@ -10,15 +11,16 @@ data = PackedVector3Array(-4.3469, 1, 4.5491, -4.3469, 1, -4.5491, -1.2594, 1, 3
 
 [node name="Node3D" type="Node3D"]
 
-[node name="Cube" type="RigidBody3D" parent="."]
+[node name="Player" type="RigidBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.51021, -1.45934)
+script = ExtResource("1_wpcxg")
 metadata/_edit_group_ = true
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
 shape = SubResource("BoxShape3D_7vjoh")
 metadata/_edit_group_ = true
 
-[node name="CSGBox3D" type="CSGBox3D" parent="Cube"]
+[node name="CSGBox3D" type="CSGBox3D" parent="Player"]
 material = ExtResource("1_07b61")
 metadata/_edit_group_ = true
 
