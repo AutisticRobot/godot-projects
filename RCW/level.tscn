@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://bcgq71v7dl24x"]
 
 [node name="Level" type="Node3D"]
+
+[node name="PlayerReferance" type="CSGPolygon3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.5)
+polygon = PackedVector2Array(-0.252013, 0.715702, 1.00661, 0.397473, 1.35479, -0.0327951, -0.188075, -0.0321321)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.630574, 0)
+size = Vector3(11.9551, 1, 12.915)
