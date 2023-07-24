@@ -27,3 +27,13 @@ size = Vector3(1, 5.38353, 5.98469)
 [node name="Ramp" type="CSGPolygon3D" parent="."]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 5.84735, -0.184023, 4.79375)
 polygon = PackedVector2Array(0, 0, 1, 0.25, 1, 0)
+
+[node name="Wall" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.3564, 29.0477, 1.58352)
+size = Vector3(14.5415, 59.3369, 76.8071)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Wall"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, -25.2383, -1.27847)
+operation = 2
+radius = 2.17404
+height = 16.7059
