@@ -37,3 +37,11 @@ transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, -25
 operation = 2
 radius = 2.17404
 height = 16.7059
+
+[node name="Ramp" type="CSGPolygon3D" parent="Wall"]
+transform = Transform3D(-4.37114e-07, 0, -10, 0, 10, 0, 10, 0, -4.37114e-07, 6.94892, -27.4472, 4.79375)
+polygon = PackedVector2Array(0, 0, 1, 0.25, 1, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Wall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.7727, -27.9361, -1.20806)
+size = Vector3(10.3679, 1, 12.1613)
