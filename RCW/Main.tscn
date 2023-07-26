@@ -1,10 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://c1vamf7ds482k"]
 
-[ext_resource type="PackedScene" uid="uid://bcgq71v7dl24x" path="res://level.tscn" id="1_tcdav"]
-[ext_resource type="PackedScene" uid="uid://cuebjmfclbjhk" path="res://player.tscn" id="2_naic4"]
+[ext_resource type="PackedScene" uid="uid://bcgq71v7dl24x" path="res://testRoom.tscn" id="1_tcdav"]
+[ext_resource type="PackedScene" uid="uid://cuebjmfclbjhk" path="res://rccar.tscn" id="2_naic4"]
 
 [node name="Node3D" type="Node3D"]
 
 [node name="Level" parent="." instance=ExtResource("1_tcdav")]
 
 [node name="Player" parent="." instance=ExtResource("2_naic4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.32985, 0)
