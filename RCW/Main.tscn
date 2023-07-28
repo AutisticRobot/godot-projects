@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c1vamf7ds482k"]
 
-[ext_resource type="PackedScene" uid="uid://bcgq71v7dl24x" path="res://testRoom.tscn" id="1_tcdav"]
+[ext_resource type="PackedScene" uid="uid://bcgq71v7dl24x" path="res://Levels/testRoom.tscn" id="1_tcdav"]
 [ext_resource type="PackedScene" uid="uid://cuebjmfclbjhk" path="res://rccar.tscn" id="2_naic4"]
 
 [node name="Node3D" type="Node3D"]

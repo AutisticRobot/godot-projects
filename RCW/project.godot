@@ -13,4 +13,4 @@ config_version=5
 config/name="RC Car in a player world"
 run/main_scene="res://Main.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Immage files/icon.svg"
