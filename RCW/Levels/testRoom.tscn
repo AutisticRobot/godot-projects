@@ -3,7 +3,7 @@
 [node name="Level" type="Node3D"]
 
 [node name="PlayerReferance" type="CSGPolygon3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 2.49074)
 polygon = PackedVector2Array(-0.252013, 0.715702, 1.00661, 0.397473, 1.35479, -0.0327951, -0.188075, -0.0321321)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
@@ -40,6 +40,14 @@ height = 16.7059
 
 [node name="Ramp" type="CSGPolygon3D" parent="Wall"]
 transform = Transform3D(-4.37114e-07, 0, -10, 0, 10, 0, 10, 0, -4.37114e-07, 6.94892, -27.4472, 4.79375)
+polygon = PackedVector2Array(0, 0, 1, 0.25, 1, 0)
+
+[node name="Ramp2" type="CSGPolygon3D" parent="Wall/Ramp"]
+transform = Transform3D(1, 0, -9.93398e-08, 0, 1, 0, 9.93398e-08, 0, 1, 1, 0.250902, 0)
+polygon = PackedVector2Array(0, 0, 1, 0.25, 1, 0)
+
+[node name="Ramp3" type="CSGPolygon3D" parent="Wall/Ramp"]
+transform = Transform3D(1, 0, -9.93398e-08, 0, 1, 0, 9.93398e-08, 0, 1, 1.99472, 0.502576, 0)
 polygon = PackedVector2Array(0, 0, 1, 0.25, 1, 0)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Wall"]
