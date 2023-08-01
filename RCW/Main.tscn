@@ -8,4 +8,7 @@
 [node name="Level" parent="." instance=ExtResource("1_tcdav")]
 
 [node name="Player" parent="." instance=ExtResource("2_naic4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.32985, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.666852, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(-4.2222e-08, 0.258819, -0.965926, 1.13133e-08, 0.965926, 0.258819, 1, 0, -4.37114e-08, -6, 2.33315, 0)

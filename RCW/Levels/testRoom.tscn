@@ -1,4 +1,11 @@
-[gd_scene format=3 uid="uid://bcgq71v7dl24x"]
+[gd_scene load_steps=3 format=3 uid="uid://bcgq71v7dl24x"]
+
+[ext_resource type="Texture2D" uid="uid://biqsnik0d71p6" path="res://Immage files/icon.svg" id="1_aovya"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8my66"]
+albedo_texture = ExtResource("1_aovya")
+uv1_triplanar = true
+uv1_world_triplanar = true
 
 [node name="Level" type="Node3D"]
 
@@ -8,7 +15,9 @@ polygon = PackedVector2Array(-0.252013, 0.715702, 1.00661, 0.397473, 1.35479, -0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.0534, -0.630574, 0)
+use_collision = true
 size = Vector3(67.2472, 1, 78.1006)
+material = SubResource("StandardMaterial3D_8my66")
 
 [node name="Arch" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.02966, 3.88047, 0.00449455)
