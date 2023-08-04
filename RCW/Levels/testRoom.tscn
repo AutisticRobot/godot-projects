@@ -73,3 +73,26 @@ size = Vector3(10.3679, 1, 12.1613)
 [node name="CSGBox3D2" type="CSGBox3D" parent="Wall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9993, 0, 0)
 size = Vector3(10, 60, 75)
+
+[node name="Bed" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.18206, 0, 30.2107)
+
+[node name="Mttress" type="CSGBox3D" parent="Bed"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.26396, 0)
+use_collision = true
+size = Vector3(40, 5, 20)
+
+[node name="headBoard" type="CSGBox3D" parent="Bed"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.657, 14.4518, 0)
+use_collision = true
+size = Vector3(2, 30, 25)
+
+[node name="footboard" type="CSGBox3D" parent="Bed"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.1777, 6.69973, 0)
+use_collision = true
+size = Vector3(2, 14, 25)
+
+[node name="pillow" type="CSGBox3D" parent="Bed"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.1821, 12.1947, 0)
+use_collision = true
+size = Vector3(9, 2, 18)
