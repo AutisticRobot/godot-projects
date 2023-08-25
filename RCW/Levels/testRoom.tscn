@@ -75,7 +75,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9993, 0, 0)
 size = Vector3(10, 60, 75)
 
 [node name="Bed" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.18206, 0, 30.2107)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.18206, 0, 26.8686)
 
 [node name="Mttress" type="CSGBox3D" parent="Bed"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.26396, 0)
@@ -96,3 +96,19 @@ size = Vector3(2, 14, 25)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.1821, 12.1947, 0)
 use_collision = true
 size = Vector3(9, 2, 18)
+
+[node name="Wall2" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.67391, 29.0477, 43.4122)
+use_collision = true
+size = Vector3(8.34651, 60, 75)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Wall2"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, -14.0793, -1.27847)
+operation = 2
+radius = 2.17404
+height = 16.7059
+
+[node name="Ramp4" type="CSGPolygon3D" parent="Wall2"]
+transform = Transform3D(-1.43051e-07, 0, -1, 0, 1, 0, 1, 0, -1.43051e-07, 2.72111, -17.8766, -37.664)
+polygon = PackedVector2Array(-8.77028, 0.269418, 42, 2, 42, 0)
+depth = 10.0

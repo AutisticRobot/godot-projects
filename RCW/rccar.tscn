@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cuebjmfclbjhk"]
+[gd_scene load_steps=6 format=3 uid="uid://cuebjmfclbjhk"]
 
 [ext_resource type="Script" path="res://Scripts/rccar.gd" id="1_0yc4c"]
 [ext_resource type="CylinderMesh" uid="uid://c4s0qv54i1h7o" path="res://Wheel.tres" id="1_6pdll"]
@@ -6,6 +6,9 @@
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wpyf4"]
 size = Vector3(2, 0.5, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_iup06"]
+size = Vector3(1.953, 0.7, 0.7)
 
 [node name="VehicleBody3D" type="VehicleBody3D"]
 mass = 30.0
@@ -19,6 +22,10 @@ mesh = ExtResource("2_lhwsj")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.166405, 0)
 shape = SubResource("BoxShape3D_wpyf4")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0.403829, 0)
+shape = SubResource("BoxShape3D_iup06")
 
 [node name="front_left" type="VehicleWheel3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1, 0, -0.644059)
