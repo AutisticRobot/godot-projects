@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bcgq71v7dl24x"]
+[gd_scene load_steps=4 format=3 uid="uid://bcgq71v7dl24x"]
 
 [ext_resource type="Texture2D" uid="uid://biqsnik0d71p6" path="res://Immage files/icon.svg" id="1_aovya"]
+[ext_resource type="PackedScene" uid="uid://bdhxpl5ylom7f" path="res://Mobles/book.blend" id="2_tl8nr"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8my66"]
 albedo_texture = ExtResource("1_aovya")
@@ -112,3 +113,6 @@ height = 16.7059
 transform = Transform3D(-1.43051e-07, 0, -1, 0, 1, 0, 1, 0, -1.43051e-07, 2.72111, -17.8766, -37.664)
 polygon = PackedVector2Array(-8.77028, 0.269418, 42, 2, 42, 0)
 depth = 10.0
+
+[node name="book" parent="." instance=ExtResource("2_tl8nr")]
+transform = Transform3D(-4.12424e-09, -0.995539, -0.0943516, -4.35164e-08, 0.0943516, -0.995539, 1, 0, -4.37114e-08, 17.3983, 5.86335, -20.1187)

@@ -105,6 +105,7 @@ skeleton = NodePath("../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="solidObjs/HouseOnSquare"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="solidObjs/HouseOnSquare/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.625959, 0)
 shape = SubResource("ConcavePolygonShape3D_5v0jh")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="solidObjs/HouseOnSquare"]
