@@ -6,6 +6,8 @@
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_02iy7")
+filePath = "sav-1"
+fileName = "main.tes"
 
 [node name="Save" type="Button" parent="."]
 offset_left = 314.0
