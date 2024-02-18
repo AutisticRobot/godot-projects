@@ -55,6 +55,8 @@ public partial class main : Node2D
 
 		if(!File.Exists(path)) return;
 
+		GD.Print(path);
+
 		try
 		{
 			loadedData = File.ReadAllText(path);
@@ -63,6 +65,19 @@ public partial class main : Node2D
 		{
 			GD.Print(e);
 		}
+
+		Json jsonData = new Json();
+
+		Error error = jsonData.Parse(loadedData);
+
+		if(error != Error.Ok)
+		{
+			GD.Print(error);
+			return;
+		}
+
+		data = (Dictionary)jsonData.Data;
+
 
 		loadState++;
 	}

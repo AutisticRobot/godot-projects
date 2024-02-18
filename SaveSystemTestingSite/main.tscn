@@ -35,6 +35,7 @@ text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("2_38tix")
+intId = "0"
 
 [node name="+" type="Button" parent="Label"]
 layout_mode = 0
@@ -65,7 +66,7 @@ text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("2_38tix")
-intId = 1
+intId = "1"
 
 [node name="+" type="Button" parent="Label2"]
 layout_mode = 0
@@ -96,7 +97,7 @@ text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("2_38tix")
-intId = 2
+intId = "2"
 
 [node name="+" type="Button" parent="Label3"]
 layout_mode = 0
