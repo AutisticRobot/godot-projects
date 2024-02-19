@@ -13,14 +13,13 @@ public partial class main : Node2D
 	private string loadedData;
 
 
-	string globalPath;
+	string globalPath = "user://";
 	string dirPath;
 	string path;
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		globalPath = ProjectSettings.GlobalizePath("user://");
 	
 	}
 
@@ -30,13 +29,13 @@ public partial class main : Node2D
 		dirPath = Path.Join(globalPath, filePath);
 		path = Path.Join(dirPath, fileName);
 
+		string json = Json.Stringify(data);
+/* working using System.IO.File class
 		if(!Directory.Exists(dirPath))
 		{
 			Directory.CreateDirectory(dirPath);
 		}
-
 		GD.Print(path);
-		string json = Json.Stringify(data);
 
 		try
 		{
@@ -46,6 +45,9 @@ public partial class main : Node2D
 		{
 			GD.Print(e);
 		}
+		*/
+		using Godot.FileAccess file = Godot.FileAccess.Open(path, Godot.FileAccess.ModeFlags.Write);
+		file.StoreString(json);
 
 	}
 	public void Load()
@@ -53,6 +55,7 @@ public partial class main : Node2D
 		dirPath = Path.Join(globalPath, filePath);
 		path = Path.Join(dirPath, fileName);
 
+/* working using System.IO.File class
 		if(!File.Exists(path)) return;
 
 		GD.Print(path);
@@ -61,10 +64,14 @@ public partial class main : Node2D
 		{
 			loadedData = File.ReadAllText(path);
 		}
-		catch (System.Exception e)
+		catch (System.Exception e)//not actuialy shur if i care about this as only matters if read/write acces blocked to the save file;
 		{
 			GD.Print(e);
 		}
+
+*/
+		using Godot.FileAccess file = Godot.FileAccess.Open(path, Godot.FileAccess.ModeFlags.Read);
+		loadedData = file.GetAsText();
 
 		Json jsonData = new Json();
 
@@ -77,7 +84,6 @@ public partial class main : Node2D
 		}
 
 		data = (Dictionary)jsonData.Data;
-
 
 		loadState++;
 	}
