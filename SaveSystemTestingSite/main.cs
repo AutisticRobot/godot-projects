@@ -1,5 +1,6 @@
 using Godot;
 using Godot.Collections;
+using Godot.NativeInterop;
 using System;
 using System.IO;
 
@@ -29,17 +30,18 @@ public partial class main : Node2D
 		dirPath = Path.Join(globalPath, filePath);
 		path = Path.Join(dirPath, fileName);
 
-		string json = Json.Stringify(data);
-/* working using System.IO.File class
+		string fileData;
+		//fileData = Json.Stringify(data);
 		if(!Directory.Exists(dirPath))
 		{
 			Directory.CreateDirectory(dirPath);
 		}
 		GD.Print(path);
+/* working using System.IO.File class
 
 		try
 		{
-			File.WriteAllText(path, json);
+			File.WriteAllText(path, fileData);
 		}
 		catch (System.Exception e)
 		{
@@ -47,7 +49,8 @@ public partial class main : Node2D
 		}
 		*/
 		using Godot.FileAccess file = Godot.FileAccess.Open(path, Godot.FileAccess.ModeFlags.Write);
-		file.StoreString(json);
+		//file.StoreString(fileData);
+		file.StoreVar(data);
 
 	}
 	public void Load()
@@ -73,17 +76,20 @@ public partial class main : Node2D
 		using Godot.FileAccess file = Godot.FileAccess.Open(path, Godot.FileAccess.ModeFlags.Read);
 		loadedData = file.GetAsText();
 
-		Json jsonData = new Json();
+		//Json jsonData = new Json();
 
-		Error error = jsonData.Parse(loadedData);
+		Error error;
+		//error = jsonData.Parse(loadedData);
+		/*
+		error;
 
 		if(error != Error.Ok)
 		{
 			GD.Print(error);
 			return;
 		}
-
-		data = (Dictionary)jsonData.Data;
+*/
+		data = (Dictionary)file.GetVar();
 
 		loadState++;
 	}
